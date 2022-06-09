@@ -57,6 +57,7 @@
             <inherited>true</inherited>
             <configuration>
                 <suiteXmlFiles>
+<!--                    de jenkins hieu dc dang test thi phai them file vao day-->
                     <suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
