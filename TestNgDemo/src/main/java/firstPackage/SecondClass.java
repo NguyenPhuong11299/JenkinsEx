@@ -23,7 +23,7 @@ public class SecondClass {
     public void beforeTest() {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
 ////
-////        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions();
 //        // set chrome as Headless
 //        options.setHeadless(true);
@@ -33,16 +33,17 @@ public class SecondClass {
 //        //Khởi tạo Chrome Driver với options trên
 //        driver = new ChromeDriver(options);
 
-//        driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
-        wdm = WebDriverManager.chromedriver().browserInDocker()
-                .enableVnc().enableRecording();
-        driver = wdm.create();
-        System.out.println(" driver ====================================" + driver);
+//        wdm = WebDriverManager.chromedriver().browserInDocker()
+//                .enableVnc().enableRecording();
+//        driver = wdm.create();
+//        System.out.println(" driver ====================================" + driver);
+
     }
     @AfterTest
     public void afterTest() {
-//        driver.quit();
-        wdm.quit();
+        driver.quit();
+//        wdm.quit();
     }
 }
