@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 public class SecondClass {
     private WebDriver driver;
+    WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker()
+            .enableVnc().enableRecording();
     @Test
     public void testEasy() {
         driver.get("http://demo.guru99.com/test/guru99home/");//truy cap trang web nay
@@ -20,22 +22,26 @@ public class SecondClass {
     }
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
+//        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
+////
+////        WebDriverManager.chromedriver().setup();
+//        ChromeOptions options = new ChromeOptions();
+//        // set chrome as Headless
+//        options.setHeadless(true);
+//        //Hoặc này
+//        //options.addArguments("--headless");
 //
-//        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions();
-        // set chrome as Headless
-        options.setHeadless(true);
-        //Hoặc này
-        //options.addArguments("--headless");
-
-        //Khởi tạo Chrome Driver với options trên
-        driver = new ChromeDriver(options);
+//        //Khởi tạo Chrome Driver với options trên
+//        driver = new ChromeDriver(options);
 
 //        driver = new ChromeDriver();
+
+
+        driver = wdm.create();
     }
     @AfterTest
     public void afterTest() {
-        driver.quit();
+//        driver.quit();
+        wdm.quit();
     }
 }
