@@ -7,9 +7,9 @@
         </classes>
     </test>
 
-<!--    <test name="SecondTest">-->
-<!--        <classes>-->
-<!--            <class name="firstPackage.SecondClass" />-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="SecondTest">
+        <classes>
+            <class name="firstPackage.SecondClass" />
+        </classes>
+    </test>
 </suite>
