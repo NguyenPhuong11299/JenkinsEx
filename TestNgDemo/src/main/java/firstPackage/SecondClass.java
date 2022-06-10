@@ -19,7 +19,7 @@ public class SecondClass {
     }
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "D:\\luyenTap\\chromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
         driver = new ChromeDriver();
     }
