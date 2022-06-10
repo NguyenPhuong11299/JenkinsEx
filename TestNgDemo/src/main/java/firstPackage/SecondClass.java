@@ -12,8 +12,7 @@ import org.testng.annotations.Test;
 
 public class SecondClass {
     private WebDriver driver;
-    WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker()
-            .enableVnc().enableRecording();
+    WebDriverManager wdm;
     @Test
     public void testEasy() {
         driver.get("http://demo.guru99.com/test/guru99home/");//truy cap trang web nay
@@ -36,7 +35,8 @@ public class SecondClass {
 
 //        driver = new ChromeDriver();
 
-
+        wdm = WebDriverManager.chromedriver().browserInDocker()
+                .enableVnc().enableRecording();
         driver = wdm.create();
     }
     @AfterTest
