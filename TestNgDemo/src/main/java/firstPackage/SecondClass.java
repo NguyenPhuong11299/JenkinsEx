@@ -22,7 +22,7 @@ public class SecondClass {
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
 //
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         // set chrome as Headless
         options.setHeadless(true);
