@@ -38,6 +38,7 @@ public class SecondClass {
         wdm = WebDriverManager.chromedriver().browserInDocker()
                 .enableVnc().enableRecording();
         driver = wdm.create();
+        System.out.println(" driver ====================================" + driver);
     }
     @AfterTest
     public void afterTest() {
