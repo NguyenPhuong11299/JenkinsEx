@@ -19,7 +19,7 @@ public class SecondClass {
     }
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");//dua file chromedriver.exe vao thu muc project => k can dong nay
 
         driver = new ChromeDriver();
     }
