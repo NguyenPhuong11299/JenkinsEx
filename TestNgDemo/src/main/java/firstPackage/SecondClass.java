@@ -20,7 +20,7 @@ public class SecondClass {
     }
     @BeforeTest
     public void beforeTest() {
-//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");//dua file chromedriver.exe vao thu muc project => k can dong nay
+        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
 //
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
