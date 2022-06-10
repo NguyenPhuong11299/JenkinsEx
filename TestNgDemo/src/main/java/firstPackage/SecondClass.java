@@ -1,5 +1,6 @@
 package firstPackage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,17 +20,19 @@ public class SecondClass {
     }
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");//dua file chromedriver.exe vao thu muc project => k can dong nay
+//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");//dua file chromedriver.exe vao thu muc project => k can dong nay
+//
+//        ChromeOptions options = new ChromeOptions();
+//        // set chrome as Headless
+//        options.setHeadless(true);
+//        //Hoặc này
+//        //options.addArguments("--headless");
+//
+//        //Khởi tạo Chrome Driver với options trên
+//        driver = new ChromeDriver(options);
 
-        ChromeOptions options = new ChromeOptions();
-        // set chrome as Headless
-        options.setHeadless(true);
-        //Hoặc này
-        //options.addArguments("--headless");
-
-        //Khởi tạo Chrome Driver với options trên
-        driver = new ChromeDriver(options);
-//        driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
     }
     @AfterTest
     public void afterTest() {
