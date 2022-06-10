@@ -22,17 +22,17 @@ public class SecondClass {
     public void beforeTest() {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");//dua file chromedriver.exe vao thu muc project => k can dong nay
 //
-//        ChromeOptions options = new ChromeOptions();
-//        // set chrome as Headless
-//        options.setHeadless(true);
-//        //Hoặc này
-//        //options.addArguments("--headless");
-//
-//        //Khởi tạo Chrome Driver với options trên
-//        driver = new ChromeDriver(options);
-
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        // set chrome as Headless
+        options.setHeadless(true);
+        //Hoặc này
+        //options.addArguments("--headless");
+
+        //Khởi tạo Chrome Driver với options trên
+        driver = new ChromeDriver(options);
+
+//        driver = new ChromeDriver();
     }
     @AfterTest
     public void afterTest() {
