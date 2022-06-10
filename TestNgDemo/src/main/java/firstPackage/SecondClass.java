@@ -24,16 +24,16 @@ public class SecondClass {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
 ////
         WebDriverManager.chromedriver().setup();
-//        ChromeOptions options = new ChromeOptions();
-//        // set chrome as Headless
-//        options.setHeadless(true);
+        ChromeOptions options = new ChromeOptions();
+        // set chrome as Headless
+        options.setHeadless(true);
 //        //Hoặc này
 //        //options.addArguments("--headless");
 //
 //        //Khởi tạo Chrome Driver với options trên
-//        driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
 
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
 
 //        wdm = WebDriverManager.chromedriver().browserInDocker()
 //                .enableVnc().enableRecording();
