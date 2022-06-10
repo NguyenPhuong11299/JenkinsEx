@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="195696" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:05:49 ICT">
+    <groups>
+    </groups>
+    <test name="FirstTest" duration-ms="38" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:02:34 ICT">
+      <class name="firstPackage.FirstClass">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:firstPackage.FirstClass@21213b92]" name="firstTest" duration-ms="4" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:02:34 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method status="PASS" signature="secondTest()[pri:0, instance:firstPackage.FirstClass@21213b92]" name="secondTest" duration-ms="1" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:02:34 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+      </class> <!-- firstPackage.FirstClass -->
+    </test> <!-- FirstTest -->
+    <test name="SecondTest" duration-ms="195619" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:05:49 ICT">
+      <class name="firstPackage.SecondClass">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstPackage.SecondClass@a7e666]" name="beforeTest" is-config="true" duration-ms="9220" started-at="2022-06-10T17:02:34 ICT" finished-at="2022-06-10T17:02:43 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:firstPackage.SecondClass@a7e666]" name="testEasy" duration-ms="186336" started-at="2022-06-10T17:02:43 ICT" finished-at="2022-06-10T17:05:49 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEasy -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstPackage.SecondClass@a7e666]" name="afterTest" is-config="true" duration-ms="60" started-at="2022-06-10T17:05:49 ICT" finished-at="2022-06-10T17:05:49 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- firstPackage.SecondClass -->
+    </test> <!-- SecondTest -->
+  </suite> <!-- Suite -->
+</testng-results>
