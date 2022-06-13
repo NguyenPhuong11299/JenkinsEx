@@ -1,6 +1,6 @@
 package firstPackage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SecondClass {
     private WebDriver driver;
-    WebDriverManager wdm;
+//    WebDriverManager wdm;
     @Test
     public void testEasy() {
         driver.get("http://demo.guru99.com/test/guru99home/");//truy cap trang web nay
@@ -24,20 +24,20 @@ public class SecondClass {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver");//dua file chromedriver.exe vao thu muc project => k can dong nay
 ////
 //        WebDriverManager.chromedriver().setup();
-//        ChromeOptions options = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
         // set chrome as Headless
-//        options.setHeadless(true);
+        options.setHeadless(true);
 //        //Hoặc này
 //        //options.addArguments("--headless");
 //
 //        //Khởi tạo Chrome Driver với options trên
-//        driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
 
 //        driver = new ChromeDriver();
 
-        wdm = WebDriverManager.chromedriver().browserInDocker()
-                .enableVnc().enableRecording();
-        driver = wdm.create();
+//        wdm = WebDriverManager.chromedriver().browserInDocker()
+//                .enableVnc().enableRecording();
+//        driver = wdm.create();
         System.out.println(" driver ====================================" + driver);
 
     }
